@@ -1,5 +1,11 @@
+import { Navbar, Menu } from "@/components/custom";
 const Product = () => {
-  return <div>Product</div>;
+  return (
+    <>
+      <Navbar />
+      <Menu />
+    </>
+  );
 };
 
 export default Product;
