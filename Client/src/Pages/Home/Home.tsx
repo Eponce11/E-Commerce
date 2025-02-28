@@ -1,11 +1,11 @@
-import { Navbar, Menu, CardItem } from "@/components/custom";
+import { Navbar, Menu, DisplayGrid } from "@/components/custom";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
       <Menu />
-      <CardItem />
+      <DisplayGrid />
     </div>
   );
 };
