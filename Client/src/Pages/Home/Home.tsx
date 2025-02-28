@@ -1,9 +1,10 @@
-import Navbar from "@/components/custom/Navbar/Navbar";
+import { Navbar, Menu } from "@/components/custom";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
+      <Menu />
     </div>
   );
 };
