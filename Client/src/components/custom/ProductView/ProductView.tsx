@@ -1,4 +1,13 @@
-import { Grid, GridItem, Box, HStack } from "@chakra-ui/react";
+import {
+  Grid,
+  GridItem,
+  Box,
+  Stack,
+  Heading,
+  Text,
+  Button,
+  Flex,
+} from "@chakra-ui/react";
 import {
   RadioCardItem,
   RadioCardLabel,
@@ -31,7 +40,21 @@ const ProductSizeRadioCards = () => {
 };
 
 const ProductDescription = () => {
-  return <div></div>;
+  return (
+    <Stack>
+      <Heading size="3xl">Hello World</Heading>
+      <Text>$120</Text>
+    </Stack>
+  );
+};
+
+const ProductAddButtons = () => {
+  return (
+    <Stack>
+      <Button variant="solid">Buy now</Button>
+      <Button variant="ghost">Add to cart</Button>
+    </Stack>
+  );
 };
 
 const ProductView = () => {
@@ -45,16 +68,7 @@ const ProductView = () => {
       <GridItem colSpan={2}>
         <ProductDescription />
         <ProductSizeRadioCards />
-      </GridItem>
-      <GridItem colSpan={2}>
-        <Box background="tomato" width="100%" padding="4" color="white">
-          This is the Box 3
-        </Box>
-      </GridItem>
-      <GridItem colSpan={4}>
-        <Box background="tomato" width="100%" padding="4" color="white">
-          This is the Box 4
-        </Box>
+        <ProductAddButtons />
       </GridItem>
     </Grid>
   );
