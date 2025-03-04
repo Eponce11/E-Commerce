@@ -12,7 +12,7 @@ const items = [
   { value: "c#", title: ".NET" },
 ];
 
-const ItemSizeRadioCards = () => {
+const ProductSizeRadioCards = () => {
   return (
     <RadioCardRoot>
       <Grid templateColumns="repeat(2, 1fr)" gap="3">
@@ -30,6 +30,10 @@ const ItemSizeRadioCards = () => {
   );
 };
 
+const ProductDescription = () => {
+  return <div></div>;
+};
+
 const ProductView = () => {
   return (
     <Grid h="200px" templateColumns="repeat(5, 1fr)" gap={4}>
@@ -39,7 +43,8 @@ const ProductView = () => {
         </Box>
       </GridItem>
       <GridItem colSpan={2}>
-        <ItemSizeRadioCards />
+        <ProductDescription />
+        <ProductSizeRadioCards />
       </GridItem>
       <GridItem colSpan={2}>
         <Box background="tomato" width="100%" padding="4" color="white">
