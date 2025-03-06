@@ -6,11 +6,10 @@ import {
   Heading,
   Text,
   Button,
-  Flex,
+  Image
 } from "@chakra-ui/react";
 import {
   RadioCardItem,
-  RadioCardLabel,
   RadioCardRoot,
 } from "@/components/ui/radio-card";
 
@@ -56,6 +55,12 @@ const ProductAddButtons = () => {
     </Stack>
   );
 };
+
+const productImage = () => {
+
+  return <Image src="" />
+}
+
 
 const ProductView = () => {
   return (
